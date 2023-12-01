@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @selfy %>
+
+<div>
+  <%= link_to "Edit this selfie", edit_selfy_path(@selfy) %> |
+  <%= link_to "Back to selfies", selfies_path %>
+
+  <%= button_to "Destroy this selfie", @selfy, method: :delete %>
+</div>

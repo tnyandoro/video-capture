@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Selfies</h1>
+
+<div id="selfies">
+  <% @selfies.each do |selfy| %>
+    <%= render selfy %>
+    <p>
+      <%= link_to "Show this selfie", selfy %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New selfie", new_selfy_path %>
